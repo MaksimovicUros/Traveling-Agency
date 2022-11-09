@@ -1,0 +1,124 @@
+.footer-container {
+    max-width: $main-resolution;
+    margin: 0 auto;
+    padding-left: $padding-24;
+    padding-right: $padding-24;
+    @include breakpoint(mobile) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.footer-nav {
+    padding-top: 85px;
+    padding-bottom: 70px;
+    display: flex;
+    @include breakpoint(tablet) {
+        display: none;
+    }
+}
+
+.footer-logo {
+    margin-bottom: 45px;
+}
+
+.company-description {
+    flex: 2;
+}
+
+.footer-description {
+    .description-paragraph {
+        font-size: 14px;
+        line-height: 22px;
+        color: $main-white;
+        opacity: .7;
+        margin-bottom: 35px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.footer-title {
+    font-size: 14px;
+    color: $main-white;
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding-top: $padding-20;
+}
+
+.footer-paragraph {
+    margin-bottom: 28px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: $main-white;
+    font-size: 14px;
+    opacity: .7;
+    &:hover {
+        text-decoration: underline;
+        opacity: 1;
+    }
+}
+
+.features {
+    flex: 1;
+}
+
+.about {
+    flex: 1;
+}
+
+.free-tools {
+    flex: 1;
+}
+
+.main-footer-color {
+    background-color: $myrtle-green;
+}
+
+.footer-main {
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    .copyright {
+        flex: 1;
+        font-size: 12px;
+        color: $main-white;
+    }
+    .social-icons {
+        flex: 1;
+        text-align: right;
+    }
+    @include breakpoint(tablet) {
+        padding-left: $padding-24;
+        padding-right: $padding-24;
+    }
+    @include breakpoint(mobile) {
+        flex-direction: column-reverse;
+        padding-top: 40px;
+        padding-bottom: 25px;
+        .social-icons {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.footer-icon {
+    font-size: 20px;
+    color: $main-white;
+    opacity: .5;
+    padding-left: 30px;
+    &:hover {
+        opacity: 1;
+    }
+    @include breakpoint(tablet) {
+        padding-left: $padding-24;
+    }
+    @include breakpoint(mobile) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

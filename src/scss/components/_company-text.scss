@@ -1,0 +1,120 @@
+.company-text {
+    max-width: $main-resolution;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    padding-left: $padding-24;
+    padding-right: $padding-24;
+    @include breakpoint(small-desktop) {
+        padding-left: 36px;
+    }
+    @include breakpoint(tablet) {
+        padding-bottom: 100px;
+    }
+    @include breakpoint(mobile) {
+        padding-bottom: 70px;
+        padding-right: $padding-20;
+        padding-left: $padding-20;
+    }
+}
+
+.company-text-container {
+    width: 85%;
+    @include breakpoint(tablet) {
+        width: 100%;
+    }
+}
+
+.company-link {
+    color: $main-orange;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.company-text-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 45px;
+    @include breakpoint(tablet) {
+        font-size: 23px;
+        margin-bottom: 25px;
+    }
+}
+
+.main-paragraph {
+    font-size: $font-16;
+    line-height: 26px;
+    @include breakpoint(tablet) {
+        font-size: $font-14;
+        line-height: 24px;
+    }
+    @include breakpoint(tablet) {
+        line-height: 23px;
+    }
+}
+
+.company-list {
+    margin-top: 30px;
+    .company-list-item {
+        font-size: $font-16;
+        line-height: 26px;
+        margin-bottom: $margin-20;
+        position: relative;
+        padding-left: 30px;
+        &:last-child {
+            margin-bottom: 50px;
+        }
+        &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 7px;
+            width: 8px;
+            height: 8px;
+            border-radius: 100px;
+            background-color: black;
+        }
+    }
+    @include breakpoint(tablet) {
+        margin-top: 25px;
+        .company-list-item {
+            font-size: $font-14;
+            &:last-child {
+                margin-bottom: 45px;
+            }
+        }
+    }
+    @include breakpoint(mobile) {
+        margin-top: 45px;
+        .company-list-item {
+            &:last-child {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+.margin-paragraph {
+    margin-top: 30px;
+}
+
+.company-text-subheading {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 45px;
+    @include breakpoint(tablet) {
+        font-size: $font-18;
+        margin-bottom: 35px;
+    }
+    @include breakpoint(mobile) {
+        margin-bottom: 25px;
+    }
+}
+
+.mobile-hide {
+    @include breakpoint(mobile) {
+        display: none;
+    }
+}

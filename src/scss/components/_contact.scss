@@ -1,0 +1,169 @@
+.contact-section {
+    background-color: $main-white;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    padding-left: $padding-24;
+    padding-right: $padding-24;
+    @include breakpoint(tablet) {
+        padding-top: 65px;
+        padding-bottom: 115px;
+     }
+     @include breakpoint(mobile) {
+        padding-top: 60px;
+        padding-bottom: 55px;
+        padding-left: 0;
+        padding-right: 0;
+     }
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 75px;
+    @include breakpoint(tablet) {
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+    @include breakpoint(mobile) {
+        font-size: 23px;
+        margin-bottom: 40px;
+    }
+}
+
+.contact-container {
+    display: flex;
+    max-width: $main-resolution;
+    margin: 0 auto;
+}
+
+.contact-image {
+    flex: 2;
+    position: relative;
+    @include breakpoint(tablet) {
+        display: none;
+    }
+}
+
+.image-container {
+    position: absolute;
+    bottom: 45px;
+    left: -55px;
+    .image-one {
+        max-width: 360px;
+    }
+    .image-two {
+        max-width: 245px;
+        margin-left: 70px;
+    }
+    @include breakpoint(small-desktop) {
+        left: 0;
+        bottom: 110px;
+        .image-one {
+            max-width: 295px;
+        }
+        .image-two {
+            max-width: 210px;
+            margin: 0;
+        }
+    }
+}
+
+.contact-form {
+    max-width: 500px;
+    width: 100%;
+    flex: 1.5;
+    @include breakpoint(small-desktop) {
+        padding-right: 36px;
+    }
+    @include breakpoint(tablet) {
+       padding-left: $padding-24;
+       padding-right: $padding-24;
+       margin: auto;
+    }
+    @include breakpoint(mobile) {
+        padding-left: $padding-20;
+        padding-right: $padding-20;
+    }
+}
+
+.input-contact {
+    width: 100%;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: $padding-20;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    border: 1px solid $secoundary-gray;
+    border-radius: 5px;
+    background-color: $main-white;
+    @include breakpoint(tablet) {
+        padding-left: 15px;
+    }
+    @include breakpoint(mobile) {
+        padding-top: 13.5px;
+        padding-bottom: 13.5px;
+        padding-left: 15px;
+        margin-top: 10px;
+        margin-bottom: $margin-20;
+    }
+}
+
+.input-label {
+    font-size: $font-14;
+    font-weight: bold;
+    @include breakpoint(mobile) {
+        font-size: 12px;
+    }
+}
+
+.input-textarea {
+    width: 100%;
+    border: 1px solid $secoundary-gray;
+    border-radius: 5px;
+    background-color: $main-white;
+    padding-left: $padding-20;
+    padding-top: $padding-20;
+    padding-bottom: 86px;
+    margin-top: 15px;
+    margin-bottom: $margin-20;
+    resize: none;
+    @include breakpoint(mobile) {
+        padding-left: 15px;
+    }
+    @include breakpoint(mobile) {
+        padding-bottom: 46px;
+        padding-left: 15px;
+    }
+}
+
+.input-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $secoundary-gray;
+    border-radius: 6px;
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 3px;
+    .icon-check {
+        font-size: 12px;
+        color: $main-orange;
+    }
+}
+
+.text-checkbox {
+    font-size: $font-14;
+    margin-left: 10px;
+}
+
+.contact-link {
+    color: $main-orange;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.contact-button {
+    margin-top: 35px;
+}

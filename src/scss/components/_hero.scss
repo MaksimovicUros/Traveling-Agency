@@ -1,0 +1,257 @@
+@import 'components/buttons';
+
+.video-section {
+     height: 100%;
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     position: absolute;
+     z-index: 2;
+}
+
+.video-story {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     margin-right: -50%;
+     transform: translate(-50%, -50%);
+     max-width: 780px;
+     width: 100%;
+     max-height: 430px;
+     height: 100%;
+     .icon-close {
+          position: absolute;
+          top: -26px;
+          right: -5px;
+          font-size: 15px;
+          color: $main-white;
+     }
+     .youtube-video {
+          max-width: 780px;
+          width: 100%;
+          max-height: 430px;
+          height: 100%;
+     }
+     @include breakpoint(tablet) {
+          max-width: 520px;
+          width: 100%;
+          max-height: 300px;
+          height: 100%;
+          .youtube-video {
+               max-width: 520px;
+               width: 100%;
+               max-height: 300px;
+               height: 100%;
+          }
+     }
+     @include breakpoint(mobile) {
+          max-width: 315px;
+          width: 100%;
+          max-height: 180px;
+          height: 100%;
+          .youtube-video {
+               max-width: 315px;
+               width: 100%;
+               max-height: 180px;
+               height: 100%;
+          }
+     }
+}
+
+.hero-banner {
+     position: relative;
+     padding-bottom: 170px;
+     background-size: cover;
+     background-repeat:no-repeat;
+     background-position:center;
+     padding-left: $padding-24;
+     padding-right: $padding-24;
+     @include breakpoint(tablet) {
+          padding-bottom: 95px;
+     }
+     @include breakpoint(mobile) {
+          padding-bottom: 0;
+          padding-left: 0;
+          padding-right: 0;
+     }
+}
+
+.container {
+     display: flex;
+     max-width: $main-resolution;
+     margin: auto;
+     .user {
+          flex: 2;
+          display: flex;
+          position: relative;
+     }
+     .icon-play {
+          position: absolute;
+          color: $main-white;
+          font-size: 10px;
+          top: 39%;
+          left: 19%;
+     }
+     @include breakpoint(small-desktop) {
+          padding: 0 36px;
+      }
+     @include breakpoint(tablet) {
+          padding-left: $padding-24;
+          padding-right: $padding-24;
+          display: block;
+      }
+      @include breakpoint(small-mobile) {
+           .icon-play {
+                left: 7%;
+           }
+      }
+}
+
+.desc {
+     padding-top: 180px;
+     flex: 1;
+     .main-heading {
+          font-size: 80px;
+          font-weight: 600;
+          line-height: 92px;
+          color: $main-white;
+          padding-bottom: 57px;
+     }
+     .main-paragraph {
+          color: $main-white;
+          line-height: 27px;
+          padding-bottom: 85px;
+     }
+     @include breakpoint(tablet) {
+          display: block;
+          padding-bottom: 80px;
+          .main-heading {
+               width: 50%;
+               font-size: 55px;
+               line-height: 68px;
+          }
+          .main-paragraph {
+               width: 60%;
+               font-size: $font-16;
+               line-height: 27px;
+               padding-bottom: 72px;
+          }
+      }
+      @include breakpoint(mobile) {
+          .main-heading {
+               width: 94%;
+               font-size: 45px;
+               line-height: 57px;
+          }
+          .main-paragraph {
+               width: 80%;
+               font-size: $font-14;
+               line-height: 22px;
+          }
+      }
+}
+
+.user-review {
+     position: absolute;
+     bottom: -12%;
+     right: -14%;
+     width: 60%;
+     @include breakpoint(small-desktop) {
+          width: 90%;
+          right: -21%;
+     }
+     @include breakpoint(tablet) {
+          position: relative;
+          margin-left: auto;
+          width: 60%;
+          right: -11%;
+     }
+     @include breakpoint(mobile) {
+          right: 0;
+          text-align: right;
+          width: auto;
+     }
+}   
+
+.user-comment {
+     width: 62%;
+     display: inline-block;
+     position: relative;
+     z-index: 1;
+     .user-comment-heading {
+          font-weight: bold;
+          color: $main-black;
+          font-size: 16px;
+          padding-bottom: $padding-20;
+     }
+     .user-comment-paragraph {
+          font-size: 12px;
+          line-height: 20px;
+          color: $main-black;
+     }
+     @include breakpoint(tablet) {
+         margin-right: 15px;
+     }
+}
+
+.icon-left-quote {
+     color: $main-white;
+     opacity: .5;
+     position: absolute;
+     left: -20%;
+     top: -50%;
+     z-index: -1;
+     @include breakpoint(mobile) {
+          top: -3%;
+      }
+}
+
+.profile {
+     display: inline-block;
+     .profile-image {
+          text-align: center;
+          img {
+               padding-bottom: 38px;
+          }
+     }
+     .vertical-text {
+          transform: rotate(-90deg);
+          font-size: 14px;
+          .name {
+               font-weight: 600;
+          }
+          .country {
+               font-size: 12px;
+          }
+     }
+     @include breakpoint(mobile) {
+          display: flex;
+          flex-direction: row-reverse;
+          padding-top: $padding-24;
+          .vertical-text {
+               transform: none;
+          }
+     }
+} 
+
+.buttons {
+     @include breakpoint(mobile) {
+          text-align: center;
+          .button-with-icon {
+               padding-left: 14px;
+          }
+     }
+     @include breakpoint(small-mobile) {
+          .button-with-icon {
+               font-size: 12px;
+               padding-left: 0;
+               text-align: center;
+               .button-function {
+                    padding: 12px 24px;
+               }
+          }
+          .main-btn {
+               font-size: 12px;
+               padding: 14px 32px;
+          }
+     }
+}

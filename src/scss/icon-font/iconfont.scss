@@ -1,0 +1,114 @@
+/**
+iconfont Webfont
+*/
+@font-face {
+	font-family: 'iconfont';
+	src: url('../fonts/iconfont.eot?1632493969416');
+	src: url('../fonts/iconfont.eot?#iefix-1632493969416') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2?1632493969416') format('woff2'),
+		url('../fonts/iconfont.woff?1632493969416') format('woff'),
+		url('../fonts/iconfont.ttf?1632493969416') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^='icon-']::before,
+[class*=' icon-']::before {
+	font-family: 'iconfont';
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+	font-weight: normal;
+	font-style: normal;
+	speak: none;
+	text-decoration: inherit;
+	font-size: inherit;
+	text-transform: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+Glyphs list
+*/
+
+.icon-arrow-down-sign-to-navigate::before {
+	content: '\ea01';
+}
+
+.icon-arrow-down::before {
+	content: '\ea02';
+}
+
+.icon-arrow-up::before {
+	content: '\ea03';
+}
+
+.icon-check::before {
+	content: '\ea04';
+}
+
+.icon-close::before {
+	content: '\ea05';
+}
+
+.icon-facebook-logo::before {
+	content: '\ea06';
+}
+
+.icon-footer-company-logo::before {
+	content: '\ea07';
+}
+
+.icon-instagram-logo::before {
+	content: '\ea08';
+}
+
+.icon-language-arrow::before {
+	content: '\ea09';
+}
+
+.icon-language-hover-arrow::before {
+	content: '\ea0a';
+}
+
+.icon-left-arrow::before {
+	content: '\ea0b';
+}
+
+.icon-left-quote::before {
+	content: '\ea0c';
+}
+
+.icon-menu::before {
+	content: '\ea0d';
+}
+
+.icon-people-vector::before {
+	content: '\ea0e';
+}
+
+.icon-play::before {
+	content: '\ea0f';
+}
+
+.icon-profile-img::before {
+	content: '\ea10';
+}
+
+.icon-right-arrow::before {
+	content: '\ea11';
+}
+
+.icon-search-outline::before {
+	content: '\ea12';
+}
+
+.icon-search::before {
+	content: '\ea13';
+}
+
+.icon-twitter-logo::before {
+	content: '\ea14';
+}

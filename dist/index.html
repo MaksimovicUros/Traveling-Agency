@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Vega Project</title>
+	<link href="./favicon.ico" rel="icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="js-body-overflow">
+	<header>
+		<div class="navigation-wrapper">
+			<nav class="main-nav js-main-nav">
+				<div class="logo">
+					<a href="#"><img src="../src/images/navLogo.png" alt="company logo" class="logo-image"></a>
+				</div>
+				<ul class="menu show-inline-table js-menu">
+					<li class="menu-list"><a href="#" class="menu-list-link current-link js-main-menu">Home</a></li>
+					<li class="menu-list"><a href="#" class="menu-list-link js-main-menu">Discover</a></li>
+					<li class="menu-list"><a href="#" class="menu-list-link js-main-menu">About us</a></li>
+					<li class="menu-list"><a href="#" class="menu-list-link js-main-menu">Contact</a></li>
+					<li class="menu-list"><a href="#" class="menu-list-link js-main-menu">Help</a></li>
+				</ul>
+			</nav>
+			<div class="search-div js-search-div hide">
+				<div class="input-search-container">
+					<span class="icon-search" id="input-icon-search"></span>
+				</div>
+				<input type="text" class="search-input" placeholder="Search text">
+				<div class="input-close">
+					<span class="icon-close" id="close-search"></span>
+				</div>
+			</div>
+			<nav class="secoundary-nav">
+				<span class="icon-search" id="js-sec-nav-search"></span>
+				<ul class="secoundary-nav-ul">
+					<li class="secoundary-nav-li"><a href="#" class="secoundary-nav-link">Sing up</a></li>
+					<li class="secoundary-nav-li"><a href="#" class="secoundary-nav-link">Login</a></li>
+				</ul>
+				<div class="language">
+					EN
+					<div class="language-hover">
+						<a href="#" class="language-hover-link">English</a>
+						<a href="#" class="language-hover-link">German</a>
+					</div>
+					<span class="icon-language-arrow"></span>
+				</div>
+				<div class="hamburger-menu">
+					<span class="icon-menu" id="js-hamburger-menu"></span>
+					<span class="icon-close icon-close-hamburger hide" id="js-close-hamburger-menu"></span>
+				</div>
+			</nav>
+		</div>
+		<nav class="tablet-nav hide js-tablet-nav">
+			<ul>
+				<li><a href="#" class="tablet-nav-link">Home</a></li>
+				<li><a href="#" class="tablet-nav-link">Discover</a></li>
+				<li><a href="#" class="tablet-nav-link">About Us</a></li>
+				<li><a href="#" class="tablet-nav-link">Contact</a></li>
+				<li><a href="#" class="tablet-nav-link">Help</a></li>
+				<li><a href="#" class="tablet-nav-link">Sign Up</a></li>
+				<li><a href="#" class="tablet-nav-link">Login</a></li>
+			</ul>
+			<div class="language-selector-container">
+				<select name="language" class="language-selector">
+					<option value="English">English</option>
+					<option value="German">German</option>
+				</select>
+				<span class="icon-arrow-down-sign-to-navigate"></span>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="hero-banner" style="background-image: url(../src/images/background.png);">
+			<div class="video-section hide" id="js-video-section">
+				<div class="video-story" id="videostory">
+					<span class="icon-close" id="js-close-storie"></span>
+					<iframe class="youtube-video" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+					</iframe>
+				</div>
+			</div>
+			<section class="container">
+				<div class="desc">
+					<h1 class="main-heading">Experience The World</h1>
+					<p class="main-paragraph">Sed ut perspiciatis, unde omnis iste natus error sit
+						voluptatem accusantimum doloremque laudantium,
+						toatam rem aperiam eaque.</p>
+					<div class="buttons">
+						<a href="#" class="main-btn">Explore all</a>
+						<div class="button-with-icon">
+							<span class="icon-play"></span>
+							<button class="button-function" id="js-play-storie">Watch storie</button>
+						</div>
+					</div>
+				</div>
+				<div class="user">
+					<div class="user-review">
+						<div class="user-comment">
+							<span class="icon-left-quote"></span>
+							<h2 class="user-comment-heading">Best travel guide</h2>
+							<p class="user-comment-paragraph">The communication was super easy and
+								quick and the place looks exactly like it does
+								on the pictures. The neighborhood is very </p>
+						</div>
+						<div class="profile">
+							<div class="profile-image">
+								<img src="../src/images/profil-image.png" alt="profil image">
+							</div>
+							<div class="vertical-text">
+								<span class="name">Jamie Diaz</span><br>
+								<span class="country">Serbia</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="slider-section-container">
+		<section class="slider-section">
+			<div class="slider-description">
+				<span class="bkg-text">Explore</span>
+				<h2 class="slider-title">Most popular destinations</h2>
+				<p class="slider-paragraph">Take a look at the Best Places to Travel in 2019 for additional
+					inspiration and if you already know where you're going this
+					coming year, share your plans with us on social media with
+					#TLBestPlacesthis link opens in a new tab.
+				</p>
+				<a href="#" class="main-btn button-slider-section">Explore All</a>
+			</div>
+			<div class="swiper-absolute">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="../src/images/NoviSad.png" alt="slider image Novi Sad" class="swiper-image">
+							<span class="swiper-text">Novi Sad, Serbia</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="../src/images/amsterdam.png" alt="slider image Amsterdam" class="swiper-image">
+							<span class="swiper-text">Amsterdam, Netherlands</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="../src/images/bahamas.png" alt="slider image Bahamas" class="swiper-image">
+							<span class="swiper-text">The Bahamas</span>
+						</div>
+					</div>
+					<span class="icon-left-arrow swiper-prev"></span>
+					<span class="icon-right-arrow swiper-next"></span>
+				</div>
+			</div>
+		</section>
+	</div>
+		<section class="tours">
+			<div class="tours-container">
+				<div class="tours-heading">
+					<h2 class="tours-title">Available Summer Tours</h2>
+				</div>
+				<div class="ticket-group">
+					<div class="ticket-highlighted">
+						<div class="image-container-highlighted">
+							<img src="../src/images/icon-bus.png" alt="icon bus" class="ticket-highlighted-image">
+						</div>
+						<div class="ticket-description-highlighted">
+							<h3 class="ticket-heading-highlighted">City Hiking Tour (3 hours)</h3>
+							<p class="ticket-paragraph-highlighted">Get onboard one of our Round City Cable Car Tour.</p>
+							<div class="dots-highlight"></div>
+						</div>
+						<div class="ticket-book-highlighted">
+							<p class="ticket-price-highlighted">$ 45.00</p>
+							<div class="ticket-button">
+								<a href="#" class="secoundary-button blue-button tour-button">Book</a>
+							</div>
+						</div>
+					</div>
+					<div class="ticket">
+						<div class="ticket-image-container">
+							<img src="../src/images/tourist-icon.png" alt="icon tourist" class="ticket-image">
+						</div>
+						<div class="ticket-description">
+							<h3 class="ticket-heading">City Hiking Tour (1.5 hours)</h3>
+							<p class="ticket-paragraph">Get onboard one of our Round City Cable Car Tour.</p>
+							<div class="line-dotted"></div>
+						</div>
+						<div class="ticket-book">
+							<p class="ticket-price">$ 45.00</p>
+						</div>
+					</div>
+					<div class="ticket">
+						<div class="ticket-image-container">
+							<img src="../src/images/icon-map.png" alt="icon map" class="ticket-image">
+						</div>
+						<div class="ticket-description">
+							<h3 class="ticket-heading">City Hiking Tour (3 hours)</h3>
+							<p class="ticket-paragraph">Get onboard one of our Round City Cable Car Tour.</p>
+							<div class="line-dotted"></div>
+						</div>
+						<div class="ticket-book">
+							<p class="ticket-price">$ 45.00</p>
+						</div>
+					</div>
+					<div class="ticket">
+						<div class="ticket-image-container">
+							<img src="../src/images/icon-cable.png" alt="icon zip line" class="ticket-image">
+						</div>
+						<div class="ticket-description">
+							<h3 class="ticket-heading">City Hiking Tour (2 hours)</h3>
+							<p class="ticket-paragraph">Get onboard one of our Round City Cable Car Tour.</p>
+							<div class="line-dotted"></div>
+						</div>
+						<div class="ticket-book">
+							<p class="ticket-price">$ 85.00</p>
+						</div>
+					</div>
+				</div>
+				<div class="tour-image">
+					<img src="../src/images/people.png" alt="people traveling">
+				</div>
+			</div>
+		</section>
+		<section class="accordion-section">
+			<h2 class="section-accordion-heading">Traveling is Easy</h2>
+			<div class="accordion-container">
+				<div class="accordion-content-container">
+					<div class="accordion-description-container">
+						<h2 class="accordion-description-heading">All Services In One Round</h2>
+						<p class="heading-paragraph">Travel on beaches</p>
+						<p class="accordion-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed
+							sem
+							id justo hendrerit
+							varius. Nulla nec ante diam. Aenean ligula elit, rutrum vitae est nec, imperdiet vestibulum
+							lacus. Nulla commodo sodales euismod. Ut sed elementum diam. Suspendisse potenti. Etiam sed
+							augue et urna imperdiet tincidunt. Curabitur imperdiet enim luctus turpis fringilla viverra.
+							Phasellus dictum et dolor sit amet ornare. Vestibulum ante ipsum primis in faucibus orci luctus
+							et ultrices posuere cubilia Curae; Donec ultrices ante ipsum, id ornare turpis pharet
+						</p>
+						<a href="#" class="main-btn">Read More</a>
+					</div>
+					<div class="accordion">
+						<h3 class="accordion-heading">Discover popular places</h3>
+						<div class="accordion-wrapper">
+							<div class="accordion-open js-accordion-open"
+								style="background-image: url(../src/images/turkey.png);"> <span
+									class="accordion-country">TURKEY</span> <span
+									class="icon-arrow-down js-icon-arrow-down"></span>
+								</div>
+							<div class="panel hide">
+								<h3 class="panel-heading">Moscow</h3>
+								<hr class="panel-hr">
+								<p class="panel-paragraph">Moscow, on the Moskva River in western Russia, is the nation’s
+									cosmopolitan capital. In its
+									historic core is the Kremlin, a complex that’s home to the president and tsarist
+									treasures
+									in the Armoury. Outside its walls is Red Square, Russia's symbolic center. It's home to
+									Lenin’s Mausoleum, the State Historical</p>
+							</div>
+							<div class="accordion-open js-accordion-open"
+								style="background-image: url(../src/images/russia.png);"><span
+									class="accordion-country">RUSSIA</span> <span
+									class="icon-arrow-down js-icon-arrow-down"></span></div>
+							<div class="panel hide">
+								<h3 class="panel-heading">Moscow</h3>
+								<hr class="panel-hr">
+								<p class="panel-paragraph">Moscow, on the Moskva River in western Russia, is the nation’s
+									cosmopolitan capital. In its
+									historic core is the Kremlin, a complex that’s home to the president and tsarist
+									treasures
+									in the Armoury. Outside its walls is Red Square, Russia's symbolic center. It's home to
+									Lenin’s Mausoleum, the State Historical</p>
+							</div>
+	
+							<div class="accordion-open js-accordion-open"
+								style="background-image: url(../src/images/brazil.png);"><span
+									class="accordion-country">BRAZIL</span> <span
+									class="icon-arrow-down js-icon-arrow-down"></span></div>
+							<div class="panel hide">
+								<h3 class="panel-heading">Moscow</h3>
+								<hr class="panel-hr">
+								<p class="panel-paragraph">Moscow, on the Moskva River in western Russia, is the nation’s
+									cosmopolitan capital. In its
+									historic core is the Kremlin, a complex that’s home to the president and tsarist
+									treasures
+									in the Armoury. Outside its walls is Red Square, Russia's symbolic center. It's home to
+									Lenin’s Mausoleum, the State Historical</p>
+							</div>
+	
+							<div class="accordion-open js-accordion-open"
+								style="background-image: url(../src/images/china.png);"><span
+									class="accordion-country">CHINA</span> <span
+									class="icon-arrow-down js-icon-arrow-down"></span></div>
+							<div class="panel hide">
+								<h3 class="panel-heading">Moscow</h3>
+								<hr class="panel-hr">
+								<p class="panel-paragraph">Moscow, on the Moskva River in western Russia, is the nation’s
+									cosmopolitan capital. In its
+									historic core is the Kremlin, a complex that’s home to the president and tsarist
+									treasures
+									in the Armoury. Outside its walls is Red Square, Russia's symbolic center. It's home to
+									Lenin’s Mausoleum, the State Historical</p>
+							</div>
+	
+							<div class="accordion-open js-accordion-open"
+								style="background-image: url(../src/images/thailand.png);"><span
+									class="accordion-country">THAILAND</span> <span
+									class="icon-arrow-down js-icon-arrow-down"></span></div>
+							<div class="panel hide">
+								<h3 class="panel-heading">Moscow</h3>
+								<hr class="panel-hr">
+								<p class="panel-paragraph">Moscow, on the Moskva River in western Russia, is the nation’s
+									cosmopolitan capital. In its
+									historic core is the Kremlin, a complex that’s home to the president and tsarist
+									treasures
+									in the Armoury. Outside its walls is Red Square, Russia's symbolic center. It's home to
+									Lenin’s Mausoleum, the State Historical</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="company-text">
+			<div class="company-text-container">
+				<h3 class="company-text-heading">I am page heading</h3>
+				<p class="main-paragraph">
+					Duis vel euismod arcu. Etiam vestibulum leo ipsum, nec lacinia nunc lobortis posuere. Nam luctus lorem
+					at
+					nibh porta, quis fermentum lacus porta. Nam dictum dapibus convallis. Suspendisse vitae porta arcu, non
+					cursus lectus. Duis sollicitudin vestibulum <span class="mobile-hide"> egestas. Praesent pharetra congue
+						quam sed sodales. Proin in
+						bibendum purus. Aenean blandit purus a hendrerit tincidunt. Check it <a href="#" class="company-link">here</a></span>
+				</p>
+				<ul class="company-list">
+					<li class="company-list-item">Duis vel euismod arcu. Etiam vestibulum leo <span class="mobile-hide">
+							ipsum, nec lacinia nunc lobortis posuere. Nam luctus
+							lorem
+							at nibh porta,</span> </li>
+					<li class="company-list-item">In ac sodales odio, ac viverra ante. Nunc massa felis, blandit fringilla
+						risus eget, feugiat
+						vulputate
+						nulla. Duis sollicitudin <span class="mobile-hide"> dictum velit sit amet sodales. Mauris in sapien
+							vitae risus maximus
+							condimentum
+							et a diam. Nullam rutrum rutrum enim, in luctus libero egestas non.</span></li>
+					<li class="company-list-item">Duis vel euismod arcu. </li>
+				</ul>
+				<h2 class="company-text-subheading">I am page subheading</h2>
+				<p class="main-paragraph">
+					Duis vel euismod arcu. Etiam vestibulum leo ipsum, nec lacinia nunc lobortis posuere. Nam luctus lorem
+					at
+					nibh porta, quis fermentum lacus porta.
+				</p>
+				<p class="main-paragraph margin-paragraph">
+					Nam dictum dapibus convallis. Suspendisse vitae porta arcu, non cursus lectus. Duis sollicitudin
+					vestibulum
+					egestas. Praesent pharetra congue quam sed sodales. Proin in bibendum purus. Aenean blandit purus a
+					hendrerit tincidunt. Check it <a href="#" class="company-link">here</a>.
+				</p>
+			</div>
+		</section>
+		<section class="contact-section">
+			<h2 class="contact-heading">Contact Us</h2>
+			<div class="contact-container">
+				<div class="contact-image">
+					<div class="image-container">
+						<img src="../src/images/contact-image1.png" alt="man sitting at desk" class="image-one">
+						<img src="../src/images/contact-image2.png" alt="girl typing on laptop" class="image-two">
+					</div>
+				</div>
+				<div class="contact-form">
+					<form action="#">
+						<label for="fname" class="input-label">Full name</label><br>
+						<input type="text" class="input-contact" id="fname" name="fname" placeholder="Your full name">
+						<br>
+						<label for="email" class="input-label">E-mail</label><br>
+						<input type="text" class="input-contact" id="email" name="email" placeholder="Your email">
+						<br>
+						<label for="message" class="input-label">Message</label>
+						<br>
+						<textarea class="input-textarea" id="message" name="message" placeholder="Your Message"></textarea>
+						<br>
+						<div class="input-checkbox js-input-checkbox"><span class="icon-check hide js-icon-check"></span></div><span class="text-checkbox">I agree to the <a href="#" class="contact-link">Terms</a>, <a href="#" class="contact-link">Privacy Policy</a> and <a href="#" class="contact-link">Fees</a>.</span>
+						<br>
+						<div class="contact-button">
+							<a href="#" class="main-btn">Send Message</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="footer-container">
+			<div class="footer-nav">
+				<div class="company-description">
+					<div class="footer-logo">
+						<img src="../src/images/footer-company-logo.png" alt="company logo">
+					</div>
+					<div class="footer-description">
+						<p class="description-paragraph">industry-leading travel app</p>
+						<p class="description-paragraph">Aliquam viverra non risus eget auctor. <br>
+							Praesent tincidunt nunc quis tellus congue</p>
+						<p class="description-paragraph">Made in Novi Sad, <br>
+							Serbia, SRB</p>
+					</div>
+				</div>
+				<div class="features">
+					<h3 class="footer-title">FEATURES</h3>
+					<ul>
+						<li class="footer-paragraph">
+							<a href="#" class="footer-link">Analytics</a>
+						</li>
+						<li class="footer-paragraph">
+							<a href="#" class="footer-link">Activity</a>
+						</li>
+						<li class="footer-paragraph">
+							<a href="#" class="footer-link">Content management</a>
+						</li>
+						<li class="footer-paragraph">
+							<a href="#" class="footer-link">Publishing</a>
+						</li>
+					</ul>
+				</div>
+				<div class="about">
+					<h3 class="footer-title">ABOUT</h3>
+					<ul>
+						<li class="footer-paragraph">
+							<a href="#" class="footer-link">Blog</a>
+						</li>
+						<li class="footer-paragraph">
+							<a href="#" class="footer-link">Pricing</a>
+						</li>
+						<li class="footer-paragraph">
+							<a href="#" class="footer-link">FAQ</a>
+						</li>
+						<li class="footer-paragraph">
+							<a href="#" class="footer-link">Product Changes</a>
+						</li>
+					</ul>
+				</div>
+				<div class="free-tools">
+					<h3 class="footer-title">FREE TOOLS</h3>
+					<ul>
+						<li class="footer-paragraph">
+							<a href="#" class="footer-link">instagram Aduit</a>
+						</li>
+						<li class="footer-paragraph">
+							<a href="#" class="footer-link">Instagram Brands Index</a>
+						</li>
+						<li class="footer-paragraph">
+							<a href="#" class="footer-link">Instagram Influencers Index</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main-footer-color">
+			<div class="footer-container">
+				<div class="footer-main">
+					<div class="copyright">
+						<span> &copy; Company name All rights reserved.</span>
+					</div>
+					<div class="social-icons">
+						<a href="#"><span class="icon-twitter-logo footer-icon"></span></a>
+						<a href="#"><span class="icon-instagram-logo footer-icon"></span></a>
+						<a href="#"><span class="icon-facebook-logo footer-icon"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script src="../src/js/main.js"></script>
+</body>
+</html>

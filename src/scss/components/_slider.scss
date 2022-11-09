@@ -1,0 +1,226 @@
+.slider-section-container {
+    position: relative;
+}
+
+.slider-section {
+    display: flex;
+    align-items: center;
+    max-width: $main-resolution;
+    margin: auto;
+    padding-left: $padding-24;
+    padding-right: $padding-24;
+    @include breakpoint(mobile) {
+        align-items: unset;
+        padding-bottom: 382px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.slider-description {
+    flex: 1;
+    position: relative;
+    margin-top: 225px;
+    margin-bottom: 185px;
+    @include breakpoint(tablet) {
+        margin-top: 180px;
+        margin-bottom: 140px;
+    }
+    @include breakpoint(mobile) {
+        margin-top: 100px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+.slider-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: $myrtle-green;
+    z-index: 1;
+    @include breakpoint(L-desktop) {
+        max-width: calc(100% - 750px);
+    }
+    @include breakpoint(small-desktop) {
+        padding-left: 36px;
+    }
+    @include breakpoint(tablet) {
+        max-width: 360px;
+        font-size: 23px;
+        padding-left: $padding-24
+    }
+    @include breakpoint(mobile) {
+        max-width: 100%;
+        padding-left: 0;
+        margin-left: $margin-24;
+        margin-right: $margin-24;
+    }
+}
+
+.slider-paragraph {
+    font-size: $font-16;
+    line-height: 24px;
+    margin-bottom: 46px;
+    margin-top: 40px;
+    max-width: 481px;
+    padding-right: $padding-20;
+    @include breakpoint(L-desktop) {
+        max-width: calc(100% - 750px);
+        padding-right: $padding-20;
+    }
+    @include breakpoint(small-desktop) {
+        padding-left: 36px;
+    }
+    @include breakpoint(tablet) {
+        max-width: 350px;
+        font-size: 14px;
+        padding-left: $padding-24;
+    }
+    @include breakpoint(mobile) {
+        max-width: 100%;
+        padding-left: $padding-24;
+    }
+}
+.bkg-text {
+    position: absolute;
+    top: -41px;
+    font-size: 75px;
+    font-weight: bold;
+    opacity: .1;
+    z-index: -1;
+    @include breakpoint(tablet) {
+        font-size: 65px;
+        left: 20px;
+    }
+    @include breakpoint(mobile) {
+        left: 85px;
+    }
+    @include breakpoint(medium-mobile) {
+        left: 60px;
+    }
+    @include breakpoint(small-mobile) {
+        left: 33px;
+    }
+}
+
+.button-slider-section {
+    @include breakpoint(small-desktop) {
+        margin-left: 36px;
+    }
+    @include breakpoint(tablet) {
+        margin-left: $margin-24;
+    }
+    @include breakpoint(mobile) {
+        display: none;
+    }
+}
+
+.slider-container {
+    flex: 1;
+    position: absolute;
+    right: 0;
+}
+
+.slider-image {
+    display: inline-block;
+    position: relative;
+    padding-left: $padding-20;
+}
+
+.icon-left-arrow {
+    position: absolute;
+    top: 191px;
+    left: 15px;
+    z-index: 1;
+    font-size: 24px;
+    color: $main-white;
+    cursor: pointer;
+    @include breakpoint(mobile) {
+        top: 128px
+    }
+}
+
+.icon-right-arrow {
+    position: absolute;
+    top: 191px;
+    right: 17px;
+    z-index: 1;
+    font-size: 24px;
+    color: $main-white;
+    cursor: pointer;
+    @include breakpoint(tablet) {
+        left: 301px;
+        right: 0;
+    }
+    @include breakpoint(mobile) {
+        left: 355px;
+        top: 128px
+    }
+    @include breakpoint(medium-mobile) {
+        left: 310px;
+    }
+    @include breakpoint(small-mobile) {
+        left: 245px;
+    }
+}
+
+.city-name {
+    position: absolute;
+    left: 43px;
+    bottom: 22px;
+    color: $main-white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.swiper {
+    max-width: 750px;
+    @include breakpoint(mobile) {
+        max-width: 610px;
+    }
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-absolute {
+    position: absolute;
+    right: 0;
+    @include breakpoint(small-desktop) {
+        right: -5px;
+    }
+    @include breakpoint(tablet) {
+        right: -425px;
+    }
+    @include breakpoint(mobile) {
+        bottom: 55px;
+        right: -210px;
+    }
+    @include breakpoint(medium-mobile) {
+        right: -265px;
+        bottom: 15px;
+    }
+    @include breakpoint(small-mobile) {
+        right: -315px
+    }
+}
+
+.swiper-image {
+    width: 280px;
+    max-height: 410px;
+    @include breakpoint(mobile) {
+        max-height: 335px;
+        width: 230px;
+    }
+}
+
+.swiper-text {
+    color: $main-white;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+    bottom: 23px;
+    left: 23px;
+}

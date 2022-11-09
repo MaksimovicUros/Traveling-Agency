@@ -1,0 +1,45 @@
+.main-btn {
+     display: inline-block;
+     background-color: $main-orange;
+     color: $main-white;
+     text-decoration: none;
+     border: none;
+     border-radius: 5px;
+     padding: 15px 33px;
+     cursor: pointer;
+     font-size: 14px;
+     &:hover {
+          background-color: $button-hover-orange;
+     }
+}
+
+.button-with-icon {
+    position: relative;
+    display: inline-block;
+    padding-left: 24px;
+    .button-function {
+         background-color: transparent;
+         color: $main-white;
+         border: 2px solid $main-white;
+         border-radius: 5px;
+         padding: 12px 35px;
+         font-size: 14px;
+    }
+    &:hover {
+        .button-function {
+              color: $main-orange;
+              background-color: $main-white;
+         }
+         .icon-play {
+              color: $main-orange;
+         }
+    }
+}
+
+.secoundary-button {
+     padding: 10px 40px;
+     color: $main-white;
+     border: none;
+     border-radius: 5px;
+     font-size: $font-16;
+}

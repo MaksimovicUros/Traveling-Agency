@@ -1,0 +1,52 @@
+@import 'utilities/mixins';
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	position: relative;
+	overflow-x: hidden;
+}
+
+header {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+    max-width: $main-resolution;
+	margin: auto;
+	padding: 0 36px;
+    max-height: 80px;
+	height: 100%;
+    background-color: white;
+	@include breakpoint(tablet) {
+        padding: 0;
+    }
+	@include breakpoint(mobile) {
+        max-height: 68px;
+    }
+}
+
+footer {
+    background-color: $dark-cyan;
+}
+
+button {
+	cursor: pointer;
+}
+
+p {
+	color: #000;
+}
+
+[class*='icon-'] {
+	color: #06c;
+	font-size: 80px;
+}
